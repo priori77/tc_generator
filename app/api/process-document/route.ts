@@ -311,7 +311,7 @@ async function processDocument(req: NextRequest) {
           model: 'o4-mini',
           response_format: 'json_object',
           max_completion_tokens: 12000,
-          reasoning_effort: 'high'
+          reasoning_effort: 'medium'
         });
         
         // o4-mini 모델 호출
@@ -326,7 +326,7 @@ async function processDocument(req: NextRequest) {
           ],
           response_format: { type: 'json_object' },
           max_completion_tokens: 12000,
-          reasoning_effort: 'high',
+          reasoning_effort: 'medium',
         });
         
         console.log('테스트 케이스 생성 API 호출 완료');
