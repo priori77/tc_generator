@@ -203,7 +203,7 @@ async function processDocument(req: NextRequest) {
     console.log(`파일 내용 길이: ${fileText.length} 문자`);
     
     // 콘텐츠 크기를 제한하여 토큰 수 감소 (매우 적극적으로 제한)
-    const maxChars = 8000; // 대략 2000-3000 토큰 정도
+    const maxChars = 12000; // 대략 2000-3000 토큰 정도
     const trimmedContent = fileText.length > maxChars 
       ? fileText.slice(0, maxChars * 0.4) + '\n... (중간 내용 생략) ...\n' + fileText.slice(fileText.length - maxChars * 0.6)
       : fileText;
