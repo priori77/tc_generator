@@ -46,7 +46,7 @@ npm run build
 npm start
 ```
 
-## 사용 방법
+## 로컬 환경 사용 방법
 
 1. 브라우저에서 `http://localhost:3000` 접속
 2. 게임 기획서 파일(PDF, DOCX, TXT 등) 업로드
@@ -59,15 +59,3 @@ npm start
 - 환경 파일(`.env.local`)은 저장소에 커밋하지 않도록 주의하세요.
 - OpenAI API 키는 비용이 발생할 수 있습니다. 사용량을 모니터링하세요.
 - 대용량 파일 처리 시 메모리 사용량과, 토큰 사용량에 주의하세요.
-
-## 기여 방법
-
-1. 저장소 포크
-2. 기능 브랜치 생성 (`git checkout -b feature/amazing-feature`)
-3. 변경 사항 커밋 (`git commit -m 'Add some amazing feature'`)
-4. 브랜치에 푸시 (`git push origin feature/amazing-feature`)
-5. Pull Request 생성
-
-## 라이선스
-
-이 프로젝트는 MIT 라이선스를 따릅니다. 
