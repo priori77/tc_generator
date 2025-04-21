@@ -48,7 +48,7 @@ export default function Component() {
       if (fileType !== 'pdf' && fileType !== 'docx') {
         toast({
           title: "파일 형식 오류",
-          description: "PDF 또는 DOCX 파일만 업로드 가능합니다.",
+          description: "PDF 파일만 업로드 가능합니다.",
           variant: "destructive",
         });
         return;
@@ -224,7 +224,7 @@ export default function Component() {
                 파일 업로드
               </CardTitle>
               <CardDescription>
-                PDF 또는 DOCX 형식의 게임 기획서를 업로드하세요.
+                PDF 형식의 게임 기획서를 업로드하세요.
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-4">
@@ -245,7 +245,7 @@ export default function Component() {
                   클릭하여 파일을 선택하거나 파일을 이곳에 끌어다 놓으세요.
                 </p>
                 <p className="text-xs text-slate-500 dark:text-slate-500">
-                  지원 형식: PDF, DOCX
+                  지원 형식: PDF
                 </p>
               </div>
               
