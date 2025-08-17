@@ -20,7 +20,8 @@ export class DocumentProcessingServiceImpl implements DocumentProcessingService 
   async generateTestCasesDirectly(content: string): Promise<TestCase[]> {
     const systemPrompt = `# System Prompt for Automated Test Case Generation
 
-You are an expert QA engineer specialized in creating comprehensive BLACK BOX TEST CASES for software systems. When given a system specification or design document, generate test cases that can be executed through the user interface without access to internal code or implementation details.
+You are an expert QA engineer specialized in creating comprehensive BLACK BOX TEST CASES for software systems.
+When given a system specification or design document, generate test cases that can be executed through the user interface without access to internal code or implementation details.
 
 ## Black Box Testing Focus
 - Generate test cases that can be executed IN-GAME or through the user interface
