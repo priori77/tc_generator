@@ -1,45 +1,70 @@
-# Node.js 종속성
+# 의존성 및 빌드 파일
 node_modules/
-/.pnp
-.pnp.js
+.next/
+out/
+build/
+dist/
 
-# 빌드 결과물
-/.next/
-/out/
-/build
-/dist
-
-# 환경 변수 파일 (민감한 정보 포함)
-.env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
-# 디버그 로그
+# 환경 변수 및 로그
+.env*
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# IDE 및 편집기 설정
-.idea/
+# 운영체제 파일
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE 및 에디터
 .vscode/
+.idea/
 *.swp
 *.swo
-.DS_Store
-*.sublime*
+*~
+
+# 캐시 및 임시 파일
+.cache/
+*.tsbuildinfo
+.eslintcache
 
 # 테스트 커버리지
-/coverage
+coverage/
+*.lcov
 
-# Cursor IDE 관련 파일
-.cursor/
+# Vercel
+.vercel
 
-# 개발 환경 백업 파일
-*.bak
-*.tmp
-*.log
+# 설정 파일들 (기능 동작과 직접 연관 없음)
+next.config.js
+tailwind.config.js
+tsconfig.json
+postcss.config.js
+package.json
+package-lock.json
+next-env.d.ts
 
-# 시스템 파일
-.DS_Store
-Thumbs.db 
+# 라이선스 및 기타 문서 (README.md 제외)
+LICENSE
+claude.md
+
+# 임시 파일 및 예시
+test-*
+openai_example.py
+*.pyc
+__pycache__/
+
+# 프로젝트 기능 동작과 연관된 파일들만 포함
+# 다음 파일들은 추적됨:
+# app/
+# components/
+# contexts/
+# services/
+# types/
+# lib/
+# README.md
